@@ -1,0 +1,4 @@
+name: AutoSmelter
+version: '${project.version}'
+main: me.immortal.autosmelter.main
+api-version: 1.19
