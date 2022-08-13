@@ -16,7 +16,7 @@ public class BreakBlockEvent implements Listener {
             Player p = event.getPlayer();
             event.getPlayer().getWorld().dropItemNaturally(p.getLocation(), new ItemStack(Material.IRON_INGOT, event.getBlock().getDrops().size()));
         }
-        if(event.getBlock().getType().equals(Material.GOLD_ORE) || event.getBlock().getType().equals(Material.DEEPSLATE_GOLD_ORE)){
+        if(event.getBlock().getType().equals(Material.GOLD_ORE) || event.getBlock().getType().equals(Material.DEEPSLATE_GOLD_ORE) || event.getBlock().getType().equals(Material.NETHER_GOLD_ORE)) {
             event.setExpToDrop(100);
             Player p = event.getPlayer();
             event.getPlayer().getWorld().dropItemNaturally(p.getLocation(), new ItemStack(Material.GOLD_INGOT, event.getBlock().getDrops().size()));
